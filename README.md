@@ -1,6 +1,43 @@
-# Final Project
+# Covid Data Analysis
 
-Final prject
+This project performs a full exploratory data analysis of global COVID-19 data, with a special focus on Latin American countries. It uses data from Johns Hopkins University and various Python libraries for data manipulation and visualization.
+
+## 1.0 Full Exploratory Data Analysis
+
+### 1.1 Libraries
+
+The project uses the following libraries:
+
+- `pandas`: For data manipulation.
+- `matplotlib`: For data visualization.
+- `seaborn`: For data visualization.
+- `janitor`: For data cleaning and transformation.
+- `final_project.utils.paths`: For file path management.
+
+### 1.2 Download Data
+
+The data is downloaded from the Johns Hopkins University repository:
+
+- URL: `https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv`
+
+### 1.3 Process Data
+
+The data is processed to convert it into a format suitable for analysis:
+
+- Relevant columns are selected.
+- The data structure is transformed to facilitate temporal analysis.
+- Column names are cleaned.
+
+### 1.4 Explore Data
+
+Several visualizations are created to explore the data:
+
+- Time series of COVID-19 cases in Latin American countries.
+- Comparison of Latin American countries in the global context.
+
+### 1.5 Save Processed Data
+
+The processed data is saved to a CSV file for further analysis.
   
 ## Installation guide
 
@@ -57,5 +94,23 @@ Please read [install.md](install.md) for details on how to set up this project.
         └── visualization  <- Scripts to create exploratory and results oriented visualizations.
             └── visualize.py
 
+
+# How to Run the Project
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Gabmax4/Covid_Data_analysis.git
+   cd Covid_Data_analysis
+   ```
+
+2. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the exploratory data analysis notebook:
+   ```bash
+   jupyter notebook notebooks/exploratory_data_analysis.ipynb
+   ```
 ---
 Project based on the [cookiecutter conda data science project template](https://github.com/jvelezmagic/cookiecutter-conda-data-science).# Covid_Data_analysis
